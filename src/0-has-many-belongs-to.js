@@ -40,6 +40,12 @@ class ToDoList {
   getItems(){
     return [...this.#list]
   }
+    /** FEEDBACK: The goal for this question is to count how many items have been marked complete from the toDoList.
+     * In your code you can start by creating a counter
+     * Currently, you are creating a new item, however, we should instead iterate through the items we already have in our array. 
+     * If the item has been marked as complete then we can increment the counter and return it. 
+     * Alternatively, what higher order method can we use to do something similar?
+     */
   getCompletedCount(isDone) {
    const completedCount = new ToDoItem(isDone)
  return completedCount
